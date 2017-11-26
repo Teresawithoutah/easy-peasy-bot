@@ -88,7 +88,7 @@ controller.on('bot_channel_join', function (bot, message) {
 controller.hears(['donald trump'], ['direct_mention', 'mention', 'direct_message'], function(bot,message) {
      bot.reply(message,{
        text: "what the fuck did you say",
-       icon_emoji:":dash:",
+       icon_emoji:":turkey:",
 
      });
 
