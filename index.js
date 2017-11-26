@@ -85,6 +85,11 @@ controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
 });
 
-controller.hears(['hello', 'hi', 'greetings'], ['direct_mention', 'mention', 'direct_message'], function(bot,message) {
-     bot.reply(message, 'wassup my g?!!');
+controller.hears(['donald trump'], ['direct_mention', 'mention', 'direct_message'], function(bot,message) {
+     bot.reply(message,{
+       text: "what the fuck did you say",
+       icon_emoji:":dash:",
+
+     });
+
  });
